@@ -7,13 +7,13 @@ import java.sql.SQLException;
 public class DriverDB {
 	
 	public Connection driverDb() throws ClassNotFoundException, SQLException {
-		System.out.println("01_µå¶óÀÌ¹ö ·Îµù ¹× DB ¿¬°á");
+		System.out.println("01_ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½ ï¿½Îµï¿½ ï¿½ï¿½ DB ï¿½ï¿½ï¿½ï¿½");
 		
 		Class.forName("com.mysql.jdbc.Driver");
 		
-		String jdbcDriver = "jdbc:mysql://localhost:3306/db14hhm?useUnicode=true&characterEncoding=euckr";
-		String dbUser = "dbid14hhm";
-		String dbPass = "dbpw14hhm";
+		String jdbcDriver = "jdbc:mysql://localhost:3306/gusgmlans?useUnicode=true&characterEncoding=euckr";
+		String dbUser = "gusgmlans";
+		String dbPass = "qudtls78!!@@";
 		
 		Connection connection = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		System.out.println(connection + "<-- connection");
